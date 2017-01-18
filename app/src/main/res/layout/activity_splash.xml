@@ -9,10 +9,10 @@
     <TextView
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="@dimen/y50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="小恩爱"
+        android:text="Like"
         android:textColor="@color/balck"
         android:textSize="40sp"
         />

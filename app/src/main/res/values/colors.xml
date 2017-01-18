@@ -6,4 +6,10 @@
 
     <color name="white">#ffffff</color>
     <color name="balck">#000000</color>
+
+    <color name="perple">#f6e62193</color>
+    <color name="perple_light">#ff60af</color>
+    <color name="gray">#918e8e</color>
+
+    <color name="blue">#4e53e4</color>
 </resources>

@@ -7,21 +7,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class BaseActivity extends AppCompatActivity {
     public Context context;
+    //public sp
     private SharedPreferences sp ;
-    private SharedPreferences.Editor editor;
+    public SharedPreferences.Editor editor;
+
+    //
+    public ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_base);
         context = this;
         App app = (App) getApplication();
         context = app;
         sp = getSharedPreferences("temp",Context.MODE_PRIVATE);
         editor = sp.edit();
-
-
     }
 
     public void showToast(String msg){
