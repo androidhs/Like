@@ -1,9 +1,9 @@
-package cn.huimin.like.login.entity;
+package cn.huimin.data.entity;
 
 /**
  * Created by 胡森森 on 2017/1/18.
  */
-public class Account {
+public class AccountEntity {
     private String username;
     private String password;
 
