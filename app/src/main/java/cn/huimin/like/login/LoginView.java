@@ -8,7 +8,6 @@ import android.widget.EditText;
 import cn.huimin.like.MainActivity;
 import cn.huimin.like.R;
 import cn.huimin.like.base.BaseActivity;
-import cn.huimin.like.login.presenter.ILoginPresenter;
 import cn.huimin.like.login.presenter.LoginPresenterImpl;
 import cn.huimin.like.login.view.ILoginView;
 
@@ -16,15 +15,14 @@ import cn.huimin.like.login.view.ILoginView;
 public class LoginView extends BaseActivity implements ILoginView, View.OnClickListener {
     private EditText username;
     private EditText password;
-    ILoginPresenter loginPresenter;
-
+//    ILoginPresenter loginPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initView();
 
-        loginPresenter = new LoginPresenterImpl(this);
+//        loginPresenter = new LoginPresenterImpl(this);
     }
 
     private void initView() {
@@ -57,7 +55,7 @@ public class LoginView extends BaseActivity implements ILoginView, View.OnClickL
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.login:
-                loginPresenter.doLogin(username.getText().toString().trim(),password.getText().toString().trim());
+//                loginPresenter.doLogin(username.getText().toString().trim(),password.getText().toString().trim());
                 break;
         }
     }
